@@ -1,0 +1,19 @@
+{
+  "name": "babel-async-bug-repro",
+  "version": "1.0.0",
+  "author": {
+    "name": "Joshua Ohlman",
+    "email": "joshua@xolv.io"
+  },
+  "main": "input.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel input.js --out-file actual.js",
+    "test": "node actual.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4"
+  }
+}
